@@ -23,7 +23,7 @@ const Faq = () => {
 
                         <div className="flex flex-col gap-2 md:w-[calc(50%-10px)] text-lg justify-center">
                             <div
-                                className="flex justify-between pr-8 text-white bg-gray-600 p-2 rounded-md cursor-pointer"
+                                className="flex justify-between pr-8 text-white bg-gray-800 p-2 rounded-md cursor-pointer"
                                 onClick={() => toogle(i)}
                             >
                                 {obj.question}
@@ -36,7 +36,7 @@ const Faq = () => {
                                 className={`overflow-hidden transition-[max-height] duration-500 ease-[cubic-bezier(0.86,0,0.07,1)] ${selected === i ? "max-h-[500px]" : "max-h-0"
                                     }`}
                             >
-                                <div className="bg-gray-600 p-2 rounded-md">{obj.answer}</div>
+                                <div className="bg-gray-800 p-2 rounded-md">{obj.answer}</div>
                             </div>
                         </div>
 

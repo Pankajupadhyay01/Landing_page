@@ -4,9 +4,9 @@ import Testimonials from "./Page/Testimonials"
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-br from-indigo-900 via-purple-900 to-green-900 text-white '>
+    <div className=' text-white '>
       <Hero />
-      <div className="w-[90%] flex justify-center m-auto flex-col">
+      <div className="w-[95%] flex justify-center m-auto flex-col">
         <Testimonials />
         <Faq />
       </div>
