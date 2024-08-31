@@ -70,7 +70,7 @@ const BackgroundWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "h-fit md:h-fit bg-gradient-to-b from-black to-slate-900 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full  overflow-hidden text-white",
+        "h-fit md:h-fit  relative flex items-center w-full  overflow-hidden text-white",
         // h-screen if you want bigger
         className
       )}
