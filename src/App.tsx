@@ -6,6 +6,7 @@ import Hero from "./Page/Hero"
 import Testimonials from "./Page/Testimonials"
 import WhatYouLearn from "./Page/WhatYouLearn"
 import { WhyAttend } from "./Page/WhyAttend"
+import RegistrationForm from "./Page/RegistrationForm"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Testimonials />
         <Bonus />
         <Faq />
+        <RegistrationForm />
       </div>
     </div>
   )
