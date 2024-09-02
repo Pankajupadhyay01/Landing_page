@@ -1,13 +1,20 @@
+import Bonus from "./Components/Bonus/Bonus"
+import ScholarshipCard from "./Components/ScholarshipCard"
+import WebinarAudience from "./Components/WebinarAudience"
 import Faq from "./Page/Faq"
 import Hero from "./Page/Hero"
 import Testimonials from "./Page/Testimonials"
 
 const App = () => {
   return (
-    <div className=' text-white '>
+    <div className='text-white '>
       <Hero />
-      <div className="w-[95%] flex justify-center m-auto flex-col">
+      <WebinarAudience/>
+      <ScholarshipCard/>
+      
+      <div className="w-[90%] flex justify-center m-auto flex-col">
         <Testimonials />
+        <Bonus/>
         <Faq />
       </div>
     </div>
