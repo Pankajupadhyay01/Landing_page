@@ -57,15 +57,14 @@ const RegistrationForm: React.FC = () => {
       {/* Left Div */}
       <div className="w-1/2 bg-gray-100 flex flex-col items-center justify-center p-8">
         <img
-          src="/assets/Careerkick.png" // Replace with your logo URL
+          src="/assets/Careerkick.png"
           alt="Logo"
           className="mb-6"
         />
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">D2C Mentorship Program</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">SHIKSHA SAMAGAM 2.0  </h1>
         <p className="text-gray-600 text-center">
-          Join our D2C Mentorship Program to get personalized guidance and support. 
-          Whether you're looking for career advice, skill development, or industry insights, 
-          our program is designed to help you achieve your goals.
+          Secure your spot in "Siksha Samagam 2.0 (2024)" and take the first step toward a successful career in BAMS. Seats are limited, so register now and ensure your future in the world of Ayurveda!
+
         </p>
       </div>
 
@@ -80,7 +79,7 @@ const RegistrationForm: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 text-black border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-black border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Enter your name"
             />
           </div>
@@ -92,7 +91,7 @@ const RegistrationForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Enter your email"
             />
           </div>
@@ -105,7 +104,7 @@ const RegistrationForm: React.FC = () => {
               onChange={handleChange}
               required
               maxLength={10}
-              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Enter your contact number"
             />
           </div>
@@ -119,18 +118,18 @@ const RegistrationForm: React.FC = () => {
               required
               min={0}
               max={720}
-              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Enter your NEET score"
             />
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
           >
             Register
           </button>
           <p className="text-sm text-gray-500 text-center mt-4">
-            By continuing, you agree to the <a href="/terms" className="text-blue-500 underline">CareerKick Terms of Service</a> and <a href="/privacy" className="text-blue-500 underline">Privacy Policy</a>.
+            By continuing, you agree to the <a href="/terms" className="text-green-500 underline">CareerKick Terms of Service</a> and <a href="/privacy" className="text-green-500 underline">Privacy Policy</a>.
           </p>
         </form>
       </div>

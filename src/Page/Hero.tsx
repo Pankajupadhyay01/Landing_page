@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import BackgroundWithCollision from "../Components/ui/BackgroundWithCollision";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const [timeLeft, setTimeLeft] = useState(7200); // 2 hours in seconds
@@ -72,9 +73,9 @@ const Hero = () => {
 
                 {/* Call to Action Section */}
                 <div className='flex flex-col items-center'>
-                    <p className="uppercase bg-purple-700 text-white font-extrabold text-center tracking-widest text-sm md:text-lg py-3 rounded-lg shadow-md cursor-pointer px-2  w-fit">
+                    <Link to={"/register"} className="uppercase bg-purple-700 text-white font-extrabold text-center tracking-widest text-sm md:text-lg py-3 rounded-lg shadow-md cursor-pointer px-2  w-fit">
                         Book Your Seat In The Webinar For Free!
-                    </p>
+                    </Link>
                     <p className="text-center font-medium text-red-500 animate-jitter mt-4 text-sm md:text-base">
                         Only 23 Seats Are Left! Hurry Up.
                     </p>

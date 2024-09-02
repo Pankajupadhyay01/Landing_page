@@ -1,28 +1,20 @@
-import Bonus from "./Components/Bonus/Bonus"
-import ScholarshipCard from "./Components/ScholarshipCard"
-import WebinarAudience from "./Components/WebinarAudience"
-import Faq from "./Page/Faq"
-import Hero from "./Page/Hero"
-import Testimonials from "./Page/Testimonials"
-import WhatYouLearn from "./Page/WhatYouLearn"
-import { WhyAttend } from "./Page/WhyAttend"
+
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./Page/Home"
 import RegistrationForm from "./Page/RegistrationForm"
 
 const App = () => {
   return (
     <div className='text-white '>
+      <BrowserRouter>
 
-      <Hero />
-      <ScholarshipCard />
-      <div className="md:w-[90%]  flex justify-center m-auto flex-col">
-        <WhyAttend />
-        <WebinarAudience />
-        <WhatYouLearn />
-        <Testimonials />
-        <Bonus />
-        <Faq />
-        <RegistrationForm />
-      </div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/register' element={<RegistrationForm />} />
+        </Routes>
+
+      </BrowserRouter>
+
     </div>
   )
 }

@@ -45,7 +45,7 @@ const WhatYouLearn = () => {
                         className={`flex w-full mb-8 items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'} `}
                     >
                         <div className={`w-1/2 p-4 ${index % 2 === 0 ? 'text-left' : 'text-right'} `}>
-                            <div className="bg-white p-4 rounded shadow-lg  bg-gradient-to-br from-white to-green-400">
+                            <div className="bg-white p-4 rounded shadow-lg ">
                                 <h3 className="font-bold text-lg text-black">{item.title}</h3>
                                 <p className="mt-2 text-gray-700">{item.description}</p>
                             </div>

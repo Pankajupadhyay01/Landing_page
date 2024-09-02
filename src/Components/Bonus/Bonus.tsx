@@ -1,7 +1,7 @@
 // src/PromotionalCards.tsx
 import React from "react";
 
-const PromotionalCards: React.FC = () => {
+const Bonus: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 p-3 md:p-8">
       {/* Card 1 */}
@@ -41,4 +41,4 @@ const PromotionalCards: React.FC = () => {
   );
 };
 
-export default PromotionalCards;
+export default Bonus;

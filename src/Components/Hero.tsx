@@ -19,7 +19,6 @@ const Hero = () => {
 
         return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     };
-    // #4caf50
     return (
         <BackgroundWithCollision>
             <div className=" w-full flex flex-col gap-5 md:gap-8 lg:gap-10 p-4 md:p-8 lg:p-10  bg-gradient-to-br from-indigo-900 via-purple-900 to-green-900 text-white rounded-lg shadow-2xl">
