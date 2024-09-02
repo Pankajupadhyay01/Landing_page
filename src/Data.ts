@@ -10,6 +10,11 @@ export interface Faq {
     answer: string
 }
 
+interface TimelineItem {
+    title: string;
+    description: string;
+}
+
 export const testimonials: Testimonials[] = [
     {
         name: "Priya R.",
@@ -90,5 +95,24 @@ export const question: Faq[] = [
     {
         "question": "Can parents attend the webinar?",
         "answer": "Yes, parents are encouraged to attend. The webinar will provide clarity on BAMS as a career path and help them understand the admission process and opportunities available to their children."
+    }
+]
+
+export const timeLine: TimelineItem[] = [
+    {
+        "title": "The BAMS Advantage",
+        "description": "Gain a deep understanding of what BAMS is, its curriculum, and why it’s becoming a popular choice among NEET aspirants."
+    },
+    {
+        "title": "Top Colleges at Your Fingertips",
+        "description": "Meet representatives from the leading BAMS colleges and learn about their programs. Apply directly during the webinar and take the first step toward your medical career."
+    },
+    {
+        "title": "Career Opportunities in Ayurveda",
+        "description": "Explore the wide range of career paths available to BAMS graduates, from clinical practice to research, wellness tourism, and more."
+    },
+    {
+        "title": "Expert Insights and Q&A",
+        "description": "Hear from esteemed guests in the BAMS field. They’ll share their experiences and answer your burning questions about pursuing a career in Ayurveda."
     }
 ]

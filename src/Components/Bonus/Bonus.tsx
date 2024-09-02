@@ -3,7 +3,7 @@ import React from "react";
 
 const PromotionalCards: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center gap-8 p-8">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-8 p-3 md:p-8">
       {/* Card 1 */}
       <div className="bg-gradient-to-r from-gray-900 via-green-900 to-green-700 text-white rounded-lg shadow-lg p-6 w-full max-w-md h-auto flex flex-col">
         <div className="flex flex-col flex-grow">

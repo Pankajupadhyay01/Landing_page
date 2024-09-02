@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import BackgroundWithCollision from "../Components/ui/BackgroundWithCollision";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
 
         return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     };
-// #4caf50
+    // #4caf50
     return (
         <BackgroundWithCollision>
             <div className=" w-full flex flex-col gap-5 md:gap-8 lg:gap-10 p-4 md:p-8 lg:p-10   rounded-lg shadow-2xl">
@@ -57,7 +57,7 @@ const Hero = () => {
                 <div className="p-9 md:p-10">
                     <div className="flex flex-col items-center">
                         <div className="h-[200px] md:h-[500px] w-full border-4 border-blue-500 rounded-xl overflow-hidden shadow-lg ">
-                            <iframe 
+                            <iframe
                                 src="https://www.youtube.com/embed/DHNyeU1ZoMI"
                                 title="India's Biggest Career Counselling Webinar 2021 | JEE Main 2021 🔥 | MARKS VS RANK VS COLLEGE"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
