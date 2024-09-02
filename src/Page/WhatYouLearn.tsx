@@ -25,7 +25,7 @@ const WhatYouLearn = () => {
     }, []);
 
     return (
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 pt-10'>
             <div>
                 <Heading title="What You’ll Learn" />
             </div>
@@ -43,7 +43,7 @@ const WhatYouLearn = () => {
                     >
                         <div className={`w-full sm:w-1/2 p-4 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                             <div className="bg-white p-4 rounded shadow-lg">
-                                <h3 className="font-bold text-lg">{item.title}</h3>
+                                <h3 className="font-bold text-black text-lg">{item.title}</h3>
                                 <p className="mt-2 text-gray-700">{item.description}</p>
                             </div>
                         </div>
