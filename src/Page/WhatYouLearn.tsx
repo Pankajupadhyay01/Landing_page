@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import { timeLine } from '../Data';
+import { timeLine, TimelineItem } from '../Data';
 import Heading from '../Components/Headings';
+import Hero from '../Components/Hero';
 
 const WhatYouLearn = () => {
     const [lineColor, setLineColor] = useState<string>('bg-gray-400');
@@ -26,27 +27,23 @@ const WhatYouLearn = () => {
     }, []);
 
     return (
-        <div className='flex flex-col gap-10 pt-10'>
-            <div>
-
-                <Heading title={"What You’ll Learn"} />
-            </div>
-
-            <div className="relative flex flex-col items-center w-full">
+        <div>
+            <Heading title="What You’ll Learn" />
+            <div className="relative flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
                 <div
                     ref={timelineRef}
                     className={`absolute w-1 h-full ${lineColor} transition-colors duration-300`}
                     style={{ left: '50%', transform: 'translateX(-50%)' }}
                 ></div>
 
-                {timeLine.map((item, index: number) => (
+                {timeLine.map((item: TimelineItem, index: number) => (
                     <div
                         key={index}
-                        className={`flex w-full mb-8 items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'} `}
+                        className={`flex w-full mb-8 items-center ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}
                     >
-                        <div className={`w-1/2 p-4 ${index % 2 === 0 ? 'text-left' : 'text-right'} `}>
-                            <div className="bg-white p-4 rounded shadow-lg ">
-                                <h3 className="font-bold text-lg text-black">{item.title}</h3>
+                        <div className={`w-full sm:w-1/2 p-4 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
+                            <div className="bg-white p-4 rounded shadow-lg">
+                                <h3 className="font-bold text-lg">{item.title}</h3>
                                 <p className="mt-2 text-gray-700">{item.description}</p>
                             </div>
                         </div>
@@ -54,6 +51,7 @@ const WhatYouLearn = () => {
                 ))}
             </div>
         </div>
+
     );
 };
 

@@ -10,7 +10,7 @@ export interface Faq {
     answer: string
 }
 
-interface TimelineItem {
+export interface TimelineItem {
     title: string;
     description: string;
 }
