@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { timeLine, TimelineItem } from '../Data';
-import Heading from '../Components/Headings';
-import Hero from '../Components/Hero';
-
+import Heading from '../Components/Headings'; 
 const WhatYouLearn = () => {
     const [lineColor, setLineColor] = useState<string>('bg-gray-400');
     const timelineRef = useRef<HTMLDivElement>(null);
