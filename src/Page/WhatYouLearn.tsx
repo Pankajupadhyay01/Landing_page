@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { timeLine, TimelineItem } from '../Data';
-import Heading from '../Components/Headings'; 
+import Heading from '../Components/Headings';
 const WhatYouLearn = () => {
     const [lineColor, setLineColor] = useState<string>('bg-gray-400');
     const timelineRef = useRef<HTMLDivElement>(null);
@@ -25,19 +25,21 @@ const WhatYouLearn = () => {
     }, []);
 
     return (
-        <div>
-            <Heading title="What You’ll Learn" />
+        <div className='flex flex-col gap-5'>
+            <div>
+                <Heading title="What You’ll Learn" />
+            </div>
             <div className="relative flex flex-col items-center w-full px-4 sm:px-6 lg:px-8">
                 <div
                     ref={timelineRef}
-                    className={`absolute w-1 h-full ${lineColor} transition-colors duration-300`}
+                    className={`absolute w-1 h-full ${lineColor} transition-colors duration-300 -z-1`}
                     style={{ left: '50%', transform: 'translateX(-50%)' }}
                 ></div>
 
                 {timeLine.map((item: TimelineItem, index: number) => (
                     <div
                         key={index}
-                        className={`flex w-full mb-8 items-center ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}
+                        className={`flex w-full z-[999] mb-8 items-center ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}
                     >
                         <div className={`w-full sm:w-1/2 p-4 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                             <div className="bg-white p-4 rounded shadow-lg">
