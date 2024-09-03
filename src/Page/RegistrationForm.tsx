@@ -55,17 +55,12 @@ const RegistrationForm: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen">
       {/* Left Div */}
-      <div className="w-full md:w-1/2 bg-gray-100 flex flex-col items-center justify-center p-4 md:p-8">
+      <div className="w-full md:w-1/2 bg-gray-100 flex">
         <img
-          src="/assets/Careerkick.png"
-          alt="Logo"
-          className="mb-4 md:mb-6"
+          src="/assets/webinar banner.png" // Replace with your image URL
+          alt="Left Image"
+          className="w-full h-full "
         />
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">SHIKSHA SAMAGAM 2.0  </h1>
-        <p className="text-sm md:text-base text-gray-600 text-center">
-          Secure your spot in "Siksha Samagam 2.0 (2024)" and take the first step toward a successful career in BAMS. Seats are limited, so register now and ensure your future in the world of Ayurveda!
-
-        </p>
       </div>
 
       {/* Right Div */}
